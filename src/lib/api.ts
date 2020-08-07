@@ -14,13 +14,13 @@ export interface IResult {
     description: string;
 }
 
-export async function fetchQuestionsAsync(): Promise<IQuestions> {
+export async function fetchQuestionsAsync(): Promise<IQuestions[]> {
     const response = await axios.get(`${SERVER_URL}/questions.json`);
 
     return response.data;
 }
 
-export async function fetchResultAsync(): Promise<IResult> {
+export async function fetchResultAsync(): Promise<IResult[]> {
     const response = await axios.get(`${SERVER_URL}/web_result.json`);
 
     return response.data;

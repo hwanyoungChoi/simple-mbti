@@ -1,23 +1,24 @@
-import React, { useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import styled from 'styled-components';
 
 import WebIntro from '../assets/web_intro.gif';
 import WippyLogo from '../assets/wippy_logo.svg';
 import ButtonContainer from '../components/common/ButtonContainer';
+import TestTemplate from '../components/main-page/TestTemplate';
 
 const MainPageBlock = styled.div`
+    text-align: center;
+`;
+
+const IntroBlock = styled.div`
     padding-left: 48px;
     padding-right: 48px;
     padding-bottom: 48px;
     padding-top: 77px;
-
-    text-align: center;
 `;
 
-const IntroBlock = styled.main``;
-
 const FooterBlock = styled.footer`
-    margin-top: 121px;
+    bottom: 0;
 `;
 
 const Title = styled.header`
@@ -33,14 +34,12 @@ const WebIntroImageWrapper = styled.div`
 const WippyLogoImage = styled.div``;
 
 function MainPage() {
-    const [isStarted, setIsStarted] = useState(false);
+    const [isStarted, setIsStarted] = useState<Boolean>(false);
 
-    const handleStartButtonClicked = () => {
-        setIsStarted(true);
-    };
+    const handleStartButtonClicked = useCallback(() => setIsStarted(true), []);
 
-    return (
-        <MainPageBlock>
+    const renderIntro = useCallback(() => {
+        return (
             <IntroBlock>
                 <Title>친구 유형 테스트</Title>
                 <WebIntroImageWrapper>
@@ -60,9 +59,19 @@ function MainPage() {
                         backgroundColor: 'black',
                     }}
                     text="시작하기"
-                    onClick={() => handleStartButtonClicked()}
+                    onClick={handleStartButtonClicked}
                 />
             </IntroBlock>
+        );
+    }, [handleStartButtonClicked]);
+
+    const renderTest = useCallback(() => {
+        return <TestTemplate />;
+    }, []);
+
+    return (
+        <MainPageBlock>
+            {isStarted ? renderTest() : renderIntro()}
             <FooterBlock>
                 <WippyLogoImage>
                     <img src={WippyLogo} alt="wippy_logo" />
