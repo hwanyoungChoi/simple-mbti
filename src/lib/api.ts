@@ -4,7 +4,7 @@ const SERVER_URL = 'https://static.wippy.io/r/web_test';
 
 export interface IQuestions {
     question: string;
-    answers: [string];
+    answers: string[];
 }
 
 export interface IResult {

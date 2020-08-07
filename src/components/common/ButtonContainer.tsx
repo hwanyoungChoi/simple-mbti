@@ -8,6 +8,13 @@ const Button = styled.button`
     text-align: center;
     color: white;
     line-height: 155.5%;
+    font-size: 20px;
+    line-height: 21px;
+    background: #ff0056;
+
+    &:disabled {
+        background: #c2c2c2;
+    }
 `;
 
 interface IButtonContainerProps {
