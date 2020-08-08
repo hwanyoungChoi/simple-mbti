@@ -2,7 +2,7 @@
 
 사이드 프로젝트로 진행한 위피 프론트엔드 과제
 
-<img width="300" alt="" src="https://user-images.githubusercontent.com/33520085/89703228-9f9c8680-d983-11ea-9b5c-c2c02725470d.png"><img width="300" alt="" src="https://user-images.githubusercontent.com/33520085/89703230-a3300d80-d983-11ea-89f5-b58a8499e1e8.png"><img width="300" alt="" src="https://user-images.githubusercontent.com/33520085/89703233-a4f9d100-d983-11ea-8b98-16e094f4aaf0.png"><img width="300" alt="" src="https://user-images.githubusercontent.com/33520085/89703235-a6c39480-d983-11ea-9c91-30b1a37e4bcb.png">
+<img width="150" alt="" src="https://user-images.githubusercontent.com/33520085/89703228-9f9c8680-d983-11ea-9b5c-c2c02725470d.png"><img width="150" alt="" src="https://user-images.githubusercontent.com/33520085/89703230-a3300d80-d983-11ea-89f5-b58a8499e1e8.png"><img width="150" alt="" src="https://user-images.githubusercontent.com/33520085/89703233-a4f9d100-d983-11ea-8b98-16e094f4aaf0.png"><img width="150" alt="" src="https://user-images.githubusercontent.com/33520085/89703235-a6c39480-d983-11ea-9c91-30b1a37e4bcb.png">
 
 ## 요구사항
 
