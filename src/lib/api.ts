@@ -20,7 +20,7 @@ export async function fetchQuestionsAsync(): Promise<IQuestions[]> {
     return response.data;
 }
 
-export async function fetchResultAsync(): Promise<IResult[]> {
+export async function fetchResultAsync(): Promise<IResult> {
     const response = await axios.get(`${SERVER_URL}/web_result.json`);
 
     return response.data;

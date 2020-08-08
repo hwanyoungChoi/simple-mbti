@@ -31,7 +31,7 @@ const WebIntroImageWrapper = styled.div`
     margin-top: 72px;
 `;
 
-const WippyLogoImage = styled.div``;
+const WippyLogoImageWrapper = styled.div``;
 
 function MainPage() {
     const [isStarted, setIsStarted] = useState<Boolean>(false);
@@ -73,9 +73,9 @@ function MainPage() {
         <MainPageBlock>
             {isStarted ? renderTest() : renderIntro()}
             <FooterBlock>
-                <WippyLogoImage>
+                <WippyLogoImageWrapper>
                     <img src={WippyLogo} alt="wippy_logo" />
-                </WippyLogoImage>
+                </WippyLogoImageWrapper>
             </FooterBlock>
         </MainPageBlock>
     );
